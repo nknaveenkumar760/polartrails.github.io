@@ -249,7 +249,7 @@ $(document).ready(function(){
     $.ajax({
 
       type:'POST',
-      url: 'http://127.0.0.1:8000/accounts/contact',
+      url: 'https://bigshopkirana.herokuapp.com/accounts/contact',
       data: {
                name: $name,
                email: $email,
@@ -259,7 +259,7 @@ $(document).ready(function(){
                  },
       success: function(data){
           console.log(data);
-           $('#info').html(data.message);
+          $('#info').html(data.message);
      }
   });
 
