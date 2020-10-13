@@ -249,7 +249,6 @@ $(document).ready(function(){
     $.ajax({
 
       type:'POST',
-      origin: "*",
       url: 'https://bigshopkirana.herokuapp.com/accounts/contact',
       data: {
                name: $name,
@@ -260,7 +259,7 @@ $(document).ready(function(){
                  },
       success: function(data){
           console.log(data);
-           $('#info').html(data[0].value);
+           $('#info').html(data);
      }
   });
 
